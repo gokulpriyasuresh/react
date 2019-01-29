@@ -203,7 +203,6 @@ export const employeeTaskValues = {
 };
 
 export function generateRows({
-
   columnValues = defaultColumnValues,
   length,
   random = randomSeed(329972281),
@@ -236,5 +235,6 @@ export function generateRows({
 
     data.push(record);
   }
+
   return data;
 }

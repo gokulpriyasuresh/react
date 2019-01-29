@@ -7,12 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form, Button} from 'reactstrap';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn} from 'mdbreact';
 import Route from 'react-router-dom/Route';
-import Userlist from "./Userlist";
+//import Userlist from "./Userlist";  //ag-react-grid file
 import createHistory from 'history/createBrowserHistory';
 import PropTypes from 'prop-types';
 import Usercreate from "./Usercreate";
 import Updateuser from "./Updateuser";
-import Gridfile from "./Gridfile";
+import Gridfile from "./Gridfile";  //dx-react-grid file
 const history = createHistory();
 
 
