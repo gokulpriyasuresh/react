@@ -1,0 +1,81 @@
+ul {
+    padding:0;
+    /*list-style:none;*/
+    width: 65%;
+    margin:auto;
+    text-align : left;
+}
+
+li{
+    font-size:1.2rem;
+    line-height: 2rem;
+    border-bottom: 1px dotted #777;
+}
+body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%)
+}
+form{
+    margin-left: 40%;
+    padding-top: 10%;
+}
+
+.form-control {
+    display: initial;
+}
+.successmsgdiv{
+    color: green;
+}
+.errormsgdiv{
+    color: red;
+}
+.btn-1{
+box-shadow : 0 0 20px #eee ;
+background-size: 200% auto ;
+border-radius: 40px
+}
+.btn-back{
+    box-shadow : 0 0 20px #eee ;
+    background-size: 200% auto ;
+    border-radius: 40px;
+    margin-left: 4%;
+}
+.data-grid {
+    width: 70%;
+    height: 10%;
+    margin-bottom: 1rem;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+.card{
+    margin-left: 10%;
+    margin-right:  10%;
+    margin-top: 10%;
+}
+.dx-g-bs4-fixed-block{
+    position: initial;
+}
+.ag-theme-fresh {
+    /*background-color: white;*/
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+    color: black;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.ag-header-cell-label{
+    color: black;
+    font-weight: 600;
+}
+.ag-paging-panel{
+    font-style: oblique;
+}
+.ag-paging-button{
+    font-style: oblique;
+    border-radius: 40px
+}
+.page-link {
+    height: 32px;
+    width: 32px;
+    font-size: 14px;
+    display:initial
+}
