@@ -15,7 +15,9 @@ import {
     PagingPanel
 } from '@devexpress/dx-react-grid-bootstrap4';
 import { DataTypeProvider } from '@devexpress/dx-react-grid';
+import TableCell from "@material-ui/core/TableCell";
 import '@devexpress/dx-react-grid-bootstrap4/dist/dx-react-grid-bootstrap4.css';
+import 'font-awesome/css/font-awesome.min.css';
 import axios from "axios/index";
 import {
     generateRows
@@ -25,7 +27,7 @@ const history = createHistory();
 
 
 const ActionsFormatter = ({ value }) => (
-    <a href={value} style={{'font-size': '20px'}} className="fa fa-eye" title="View" />
+    <a href={value} style={{'fontSize': '20px'}} className="fa fa-eye" title="View" ></a>
 );
 const ActionsTypeProvider = props => (
     <DataTypeProvider
@@ -33,7 +35,11 @@ const ActionsTypeProvider = props => (
         {...props}
     />
 );
-
+const FilterCell = props => {
+    if (props.column.name === "link")
+        return <TableCell className={props.className} />;
+    else return <TableFilterRow.Cell {...props} />;
+};
 
 class Gridfile extends Component{
     constructor(props) {
@@ -115,7 +121,7 @@ class Gridfile extends Component{
                     <PagingPanel
                         pageSizes={pageSizes}
                     />
-                    <TableFilterRow />
+                    <TableFilterRow cellComponent={FilterCell} />
                 </Grid>
             </div>
             </div>
